@@ -8,7 +8,7 @@ In order to implement the RF-Veil transmitter, we mainly used already existing V
 
 The PHY implementation first reads all available data from the PHY SAP, which also includes the Phase Error LUT. The TX Bit Processing generates the signal fields and serializes, scrambles, encodes, punctures, and interleaves the data stream before passing it to the TX IQ Processing. The main task of this module is then to add training fields (STF, LTF) and convert the bits to IQ samples. The first module generates the packet structure, i.e., timing, parameters, and field mapping, that stays constant during an OFDM symbol. This metadata then serves as input for the next module, which is responsible for accordingly generating the LTF, pilot, or data IQ symbol. Parallel to that, based on the frequency offset indicator from the packet structure, the module Get Phase Error for SC loads the according phase error from the array and converts them into a fixed point complex number. The program flow merges again in the next module, which takes care of multiplying the two complex numbers, i.e., the complex phase rotation path with the complex IQ symbol from the upper and lower data paths, respectively. The following downstream modules duplicate and rotate the channel and further apply the iFFT pre-scaling to the symbols. Finally, the output of the 256-point iFFT is written into the TX to RF FIFO for transmission.
 
-##Implementation Details
+## Implementation Details
 
 *Please read the implementation details of the RF-Veil receiver first*. 
 
