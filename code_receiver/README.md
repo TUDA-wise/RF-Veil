@@ -6,7 +6,7 @@ We implemented most of the logic on the host. The *VI 802.11 Prepare Channel Est
 
 In order to implement the RF-Veil Receiver on top of the NI 802.11 AFW, use the VI **TODO** and put it into a separate loop in the *Host* VI. It is then executed back to back. Note that, in order to get a better real-time performance, i.e. execute the RF-Veil Receiver on every received frame, the code inside this VI needs to be pushed to the lower MAC or PHY layer on the FPGA. 
 
-##Implementation Details
+## Implementation Details
 
 Due to NI AFW licensing, we are only able to share the code we wrote on our own. Hence, this repository only contains code-snippets and does not represent a fully-functional 802.11 station. In order to use this PoC, the VIs have to be built into the 802.11 AFW.
 
