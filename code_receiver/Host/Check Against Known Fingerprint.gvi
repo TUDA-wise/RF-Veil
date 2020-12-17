@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="74AA7623715BC37D1D9AFB4D80C22C55" Timestamp="1D6D4619C45D55A" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="5.3.3.49750" FeatureSetName="LabVIEW-Elemente" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.3.3.49750" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.3.3.49750" FeatureSetName="Gemeinsame Sprachkomponenten" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.3.3.49750" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.3.3.49750" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.3.3.49750" Name="LabVIEW NXG" Version="2.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Check Against Known Fingerprint" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="10" ListViewHeight="115" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 65" Parameter="56" />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="21" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 80" Parameter="78" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 35" Parameter="48" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 95" Parameter="112" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
+			<ArrayViewer ArrayElement="[UIModel]24" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]2" Height="[float]52" Id="27" IndexVisibility="[Visibility]Visible" Left="[float]0" Name="[string]Fingerprint Ground Truth" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]0" Value="{DataItemBinding Id=21}" Width="[float]130" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="24" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[float]1" MinHeight="[float]24" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" UnitAnnotation="[string]" ValueFormatter="[string]LV:G6" ValueType="[Type]Single" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="51" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[double]1" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]Fingerprint derivation sum" Top="[float]0" Value="{DataItemBinding Id=48}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=56}" Height="[float]400" Id="57" Label="[UIModel]76" Left="[float]767" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]NaN,NaN,NaN,NaN" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" Top="[float]1037" Width="[float]600" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Axis Adjuster="[RangeAdjuster]None" Id="58" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]70" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 51, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="70">
+						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0.######" ShortFormat="0.000E+0" />
+					</RangeLabeledDivisions>
+				</Axis>
+				<Axis Adjuster="[RangeAdjuster]None" Id="59" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]71" Orientation="[SMOrientation]Vertical" Range="[IRange]-0.8, 0.8, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="71">
+						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0.######" ShortFormat="0.000E+0" />
+					</RangeLabeledDivisions>
+				</Axis>
+				<Plot HorizontalScale="[UIModel]58" Id="60" Label="[string]Plot" VerticalScale="[UIModel]59" Visibility="[SMVisibility]Visible" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="61" LineStroke="[SMSolidColorBrush]#ff7b161a" PointFill="[SMSolidColorBrush]#ff7b161a" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="62" LineStroke="[SMSolidColorBrush]#ff008ee4" PointFill="[SMSolidColorBrush]#ff008ee4" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="63" LineStroke="[SMSolidColorBrush]#ffe2b683" PointFill="[SMSolidColorBrush]#ffe2b683" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="64" LineStroke="[SMSolidColorBrush]#ffb7ac1f" PointFill="[SMSolidColorBrush]#ffb7ac1f" PointShape="[PointShape]Cross" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="65" LineStroke="[SMSolidColorBrush]#ffaedcef" PointFill="[SMSolidColorBrush]#ffaedcef" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="66" LineStroke="[SMSolidColorBrush]#ffa08bb0" PointFill="[SMSolidColorBrush]#ffa08bb0" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="67" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointFill="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="68" LineStroke="[SMSolidColorBrush]#ff3c0726" PointFill="[SMSolidColorBrush]#ff3c0726" PointShape="[PointShape]Cross" />
+				<Plot HorizontalScale="[UIModel]58" Id="69" Label="[string]Plot 2" VerticalScale="[UIModel]59" Visibility="[SMVisibility]Visible" />
+			</Graph>
+			<PlotLegend Graph="[UIModel]57" Height="[float]28" Id="72" Left="[float]1374" Top="[float]1037" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]57" Height="[float]102" Id="73" Left="[float]772" MinHeight="[float]80" Top="[float]1466" Visible="[bool]False" Width="[float]251" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ScaleLegend Graph="[UIModel]57" Height="[float]50" Id="74" Left="[float]1374" MinHeight="[float]50" Top="[float]1335" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<GraphTools Graph="[UIModel]57" Height="[float]22" Id="75" Left="[float]772" Top="[float]1444" Visible="[bool]False" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="76" LabelOwner="[UIModel]57" Left="[float]767" Text="[string]Merged Phases" Top="[float]1017" Width="[float]82" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]81" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]52" Id="84" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" Left="[float]0" Name="[string]Fingerprint derivation" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]0" Value="{DataItemBinding Id=78}" Width="[float]130" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="81" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[double]1" IsReadOnly="[bool]True" MinHeight="[float]24" Name="[string]Child" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<ArrayViewer ArrayElement="[UIModel]114" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]52" Id="113" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" Left="[float]0" Name="[string]Fingerprint Ground Truth out" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]0" Value="{DataItemBinding Id=112}" Width="[float]130" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="114" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[float]1" IsReadOnly="[bool]True" MinHeight="[float]24" Name="[string]Child" ValueFormatter="[string]LV:G6" ValueType="[Type]Single" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="13">
+			<DataAccessor Bounds="-115 60 40 15" DataItem="21" Id="26" Label="28" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Single[,]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="26" Bounds="-258 60 138 14" Id="28" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Fingerprint Ground Truth</p.Text>
+			</NodeLabel>
+			<Subtract Bounds="75 80 30 30" Id="34" />
+			<Wire Id="36" Joints="N(54:Value)|(45,115) h(20) v(-15) N(34:y)|(75,100)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="45" Joints="N(34:x-y)|(105,95) h(10) B(1) N(46:numeric array)|(125,95) B(1) v(-30) N(83:Value)|(128,65)" xmlns="http://www.ni.com/PlatformFramework" />
+			<AddArrayElements Bounds="125 80 30 30" Id="46" />
+			<DataAccessor Bounds="175 90 40 15" DataItem="48" Id="50" Label="52" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="50" Bounds="220 90 147 14" Id="52" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Fingerprint derivation sum</p.Text>
+			</NodeLabel>
+			<Wire Id="53" Joints="N(46:sum)|(155,95) N(50:Value)|(178,95)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="5 110 40 15" DataItem="56" Id="54" Label="55" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Double[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="54" Bounds="-83 110 83 14" Id="55" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Merged Phases</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="125 60 40 15" DataItem="78" Id="83" Label="85" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="83" Bounds="170 60 120 14" Id="85" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Fingerprint derivation</p.Text>
+			</NodeLabel>
+			<ArrayIndex Bounds="5 60 40 40" Id="86" Rank="2" Terminals="array=92, c0t0v, c0t1v=95, c0out=87" />
+			<Wire Id="87" Joints="N(86:c0out)|(45,85) h(10) B(1) N(34:x)|(75,85) B(1) v(35) N(110:Value)|(78,120)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Transpose2DArray Bounds="-55 60 40 20" Id="90" />
+			<Wire Id="91" Joints="N(26:Value)|(-75,65) N(90:2D array)|(-55,65)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="92" Joints="N(90:transposed array)|(-15,65) N(86:array)|(5,65)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="-55 90 40 15" DataType="Int32" Id="93" Label="94" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<NodeLabel AttachedTo="93" Bounds="-55 105 0 0" Id="94" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>column index</p.Text>
+			</NodeLabel>
+			<Wire Id="95" Joints="N(93:Out)|(-15,95) N(86:c0t1v)|(5,95)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="75 115 40 15" DataItem="112" Id="110" Label="111" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Single[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="110" Bounds="120 115 160 14" Id="111" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Fingerprint Ground Truth out</p.Text>
+			</NodeLabel>
+		</BlockDiagram>
+		<NativeFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
+			<PanelExecutionWindow Id="115" />
+		</NativeFrontPanel>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="Single[,]" Id="21" Name="Fingerprint Ground Truth" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Array Lengths="1,52" IsBinary="True" Compression="GZip">
+					<BinaryElements>H4sIAAAAAAAEAGNgZGBg+A8EIBoEBEAMEyDm4GYAk55zG/ZycF99/gpI6irK7+PgPhXiCCQli8OB5POeDCB5M74MSLoXVQLJ2z/rgKSyVzWQVPoLEj+yMQ9IVr5MA5ISU0OApHCiM5BcmG4MJC/7KgHJPdMEgOStNb+AtkgduA0kj/ZvBJIF5zqAZNMj971gNUBSW2LqHg7uOcZKthzcgdmzgKTDkvtAUstKyI6D+2+7CZDksI0GkifYa4Hk7h29QNJTbz6Q/B2zFkgmv9sFJOefPQUkWRdfApL/Fe8CyYOnHgJJ2ZNPgeT6KSByzpEHQHKx8k0geS3sDEjlpt1gNUuBpKVrO5C8u9UFSLaL3bSFhBg3AFEdGKNTAQAA</BinaryElements>
+				</Array>
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="Double" Id="48" Name="Fingerprint derivation sum" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="Double[]" Id="56" Name="Merged Phases" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Array Lengths="0" />
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Double[]" Id="78" Name="Fingerprint derivation" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="2" DataType="Single[]" Id="112" Name="Fingerprint Ground Truth out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+</SourceFile>

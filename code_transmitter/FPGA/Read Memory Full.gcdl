@@ -1,0 +1,1720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="D3442822E049AA8D569F855C6B37769F" Timestamp="1D6D46800BDAD26" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="5.3.3.49750" FeatureSetName="LabVIEW-Elemente" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.3.3.49750" FeatureSetName="LabVIEW FPGA" Name="http://www.ni.com/LabVIEW.FPGA" OldestCompatibleVersion="5.2.0.2" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.3.3.49750" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.3.3.49750" FeatureSetName="Gemeinsame Sprachkomponenten" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.3.3.49750" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.3.3.49750" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.3.3.49750" Name="LabVIEW NXG" Version="2.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AnBa Read Memory Full" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="10" ListViewHeight="100" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="320" />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="331" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="150 65" Parameter="343" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 80" Parameter="321" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
+			<FpgaNameControl BaseName="[string]Dram" DataType="[Type]@7cc360f22d3841e4abf8950b2c7aea80" Height="[float]27" Id="322" Left="[float]0" Name="[string]CD DRAM" SelectedResource="{DataItemBinding Id=320}" Top="[float]0" UdrClass="[string]Dram" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@16db1f32267f4c8c966ac08fd570dcc1" Height="[float]819" Id="323" Label="[UIModel]330" Left="[float]245" Top="[float]124" Value="{DataItemBinding Id=321}" Width="[float]199" p4:ControlDefinitionChecksum="1n/pdPYFzAdKOuV4uIeCGg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="AnBa\ Channel\ Disturbance\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<p4:ArrayViewer ArrayElement="[UIModel]328" BaseName="[string]Numeric Array Output" Columns="[int]1" Dimensions="[int]1" FixedSize="[ArrayElementIndex]57" Height="[float]1380" Id="324" IsFixedSize="[bool]True" Label="[UIModel]325" Left="[float]10" Orientation="[SMOrientation]Vertical" Rows="[int]57" TabIndex="[int]1" Top="[float]27" Value="{ClusterBinding FieldName=Channel\ Disturbance}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]133">
+					<p.DefaultElementValue>0</p.DefaultElementValue>
+					<NumericText Height="[float]24" Id="328" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ushort]1" IsReadOnly="[bool]True" Label="[UIModel]329" MinHeight="[float]24" ValueType="[Type]UInt16" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<p4:Label Id="329" IsVisualChild="[bool]False" LabelOwner="[UIModel]328" Left="[float]53" Text="[string]Numeric" Top="[float]-13" />
+					</NumericText>
+				</p4:ArrayViewer>
+				<p4:Label Height="[float]16" Id="325" LabelOwner="[UIModel]324" Left="[float]10" Text="[string]Channel Disturbance" Top="[float]7" Width="[float]110" />
+				<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]30" Id="326" IsReadOnly="[bool]True" Label="[UIModel]327" Left="[float]155" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Round" TabIndex="[int]2" Top="[float]27" TrueContent="[string]On" Value="{ClusterBinding FieldName=valid}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="327" LabelOwner="[UIModel]326" Left="[float]155" Text="[string]valid" Top="[float]7" Width="[float]25" />
+			</Cluster>
+			<Label Height="[float]16" Id="330" LabelOwner="[UIModel]323" Left="[float]245" Text="[string]CD cluster" Top="[float]104" Width="[float]150" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@16db1f32267f4c8c966ac08fd570dcc1" Height="[float]819" Id="332" Label="[UIModel]339" Left="[float]245" Top="[float]124" Value="{DataItemBinding Id=331}" Width="[float]199" p4:ControlDefinitionChecksum="1n/pdPYFzAdKOuV4uIeCGg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="AnBa\ Channel\ Disturbance\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<p4:ArrayViewer ArrayElement="[UIModel]337" BaseName="[string]Numeric Array Output" Columns="[int]1" Dimensions="[int]1" FixedSize="[ArrayElementIndex]57" Height="[float]1380" Id="333" IsFixedSize="[bool]True" Label="[UIModel]334" Left="[float]10" Orientation="[SMOrientation]Vertical" Rows="[int]57" TabIndex="[int]1" Top="[float]27" Value="{ClusterBinding FieldName=Channel\ Disturbance}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]133">
+					<p.DefaultElementValue>0</p.DefaultElementValue>
+					<NumericText Height="[float]24" Id="337" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ushort]1" Label="[UIModel]338" MinHeight="[float]24" ValueType="[Type]UInt16" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<p4:Label Id="338" IsVisualChild="[bool]False" LabelOwner="[UIModel]337" Left="[float]53" Text="[string]Numeric" Top="[float]-13" />
+					</NumericText>
+				</p4:ArrayViewer>
+				<p4:Label Height="[float]16" Id="334" LabelOwner="[UIModel]333" Left="[float]10" Text="[string]Channel Disturbance" Top="[float]7" Width="[float]110" />
+				<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]30" Id="335" IsReadOnly="[bool]False" Label="[UIModel]336" Left="[float]155" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Round" TabIndex="[int]2" Top="[float]27" TrueContent="[string]On" Value="{ClusterBinding FieldName=valid}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="336" LabelOwner="[UIModel]335" Left="[float]155" Text="[string]valid" Top="[float]7" Width="[float]25" />
+			</Cluster>
+			<Label Height="[float]16" Id="339" LabelOwner="[UIModel]332" Left="[float]245" Text="[string]cluster in" Top="[float]104" Width="[float]150" xmlns="http://www.ni.com/PanelCommon" />
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="346" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]ready for output" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=343}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="13">
+			<Wire Id="15" Joints="N(341:Value)|(-1395,325) h(5) v(-75) h(55) B(3) h(3485) v(-85) N(312:instance in)|(2160,165) B(3) v(-85) N(18:instance in)|(-1330,165)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="-1295 130 40 15" DataItem="320" Id="16" Label="316" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<PropertyNode Bounds="-1330 160 149 35" HasErrorTerminals="False" Id="18" InstanceDataType="@16db1f32267f4c8c966ac08fd570dcc1" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/MocCommon">
+				<PropertyItemTerminal DataType="UInt16[57]" Hotspot="149 15" Id="c0t0v" Path="Channel Disturbance" PathElementMemberKinds="Field" Usage="Optional" />
+			</PropertyNode>
+			<DataAccessor Bounds="2375 155 40 15" DataItem="321" Id="19" Label="318" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@16db1f32267f4c8c966ac08fd570dcc1" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<Wire Id="20" Joints="N(16:Value)|(-1255,135) h(240) v(15) N(24:L0)|(-1005,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="-1150 165 40 16" DataType="UInt32" Id="21" Label="319" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<Wire Id="22" Joints="N(21:Out)|(-1110,170) N(24:L2)|(-1005,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="23" Joints="N(345:Value)|(-1360,220) h(350) v(-40) N(24:L3)|(-1005,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-1005 145 40 40" DomainName="NI.MocCommon" Id="24" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="25" Joints="N(18:c0t0v)|(-1181,175) h(26) v(-15) N(24:L1)|(-1005,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-950 145 40 40" DomainName="NI.MocCommon" Id="26" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="27" Joints="N(24:R0)|(-965,150) N(26:L0)|(-950,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="28" Joints="N(24:R1)|(-965,160) N(26:L1)|(-950,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="29" Joints="N(24:R2)|(-965,170) N(26:L2)|(-950,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="30" Joints="N(24:R3)|(-965,180) N(26:L3)|(-950,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-895 145 40 40" DomainName="NI.MocCommon" Id="31" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="-840 145 40 40" DomainName="NI.MocCommon" Id="32" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="33" Joints="N(31:R0)|(-855,150) N(32:L0)|(-840,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="34" Joints="N(31:R1)|(-855,160) N(32:L1)|(-840,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="35" Joints="N(31:R2)|(-855,170) N(32:L2)|(-840,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="36" Joints="N(31:R3)|(-855,180) N(32:L3)|(-840,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="37" Joints="N(26:R0)|(-910,150) N(31:L0)|(-895,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="38" Joints="N(26:R1)|(-910,160) N(31:L1)|(-895,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="39" Joints="N(26:R2)|(-910,170) N(31:L2)|(-895,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="40" Joints="N(26:R3)|(-910,180) N(31:L3)|(-895,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-785 145 40 40" DomainName="NI.MocCommon" Id="41" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="-730 145 40 40" DomainName="NI.MocCommon" Id="42" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="43" Joints="N(41:R0)|(-745,150) N(42:L0)|(-730,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="44" Joints="N(41:R1)|(-745,160) N(42:L1)|(-730,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="45" Joints="N(41:R2)|(-745,170) N(42:L2)|(-730,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="46" Joints="N(41:R3)|(-745,180) N(42:L3)|(-730,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-675 145 40 40" DomainName="NI.MocCommon" Id="47" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="-620 145 40 40" DomainName="NI.MocCommon" Id="48" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="49" Joints="N(47:R0)|(-635,150) N(48:L0)|(-620,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="50" Joints="N(47:R1)|(-635,160) N(48:L1)|(-620,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="51" Joints="N(47:R2)|(-635,170) N(48:L2)|(-620,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="52" Joints="N(47:R3)|(-635,180) N(48:L3)|(-620,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="53" Joints="N(42:R0)|(-690,150) N(47:L0)|(-675,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="54" Joints="N(42:R1)|(-690,160) N(47:L1)|(-675,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="55" Joints="N(42:R2)|(-690,170) N(47:L2)|(-675,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="56" Joints="N(42:R3)|(-690,180) N(47:L3)|(-675,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="57" Joints="N(32:R0)|(-800,150) N(41:L0)|(-785,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="58" Joints="N(32:R1)|(-800,160) N(41:L1)|(-785,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="59" Joints="N(32:R2)|(-800,170) N(41:L2)|(-785,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="60" Joints="N(32:R3)|(-800,180) N(41:L3)|(-785,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-565 145 40 40" DomainName="NI.MocCommon" Id="61" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="-510 145 40 40" DomainName="NI.MocCommon" Id="62" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="63" Joints="N(61:R0)|(-525,150) N(62:L0)|(-510,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="64" Joints="N(61:R1)|(-525,160) N(62:L1)|(-510,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="65" Joints="N(61:R2)|(-525,170) N(62:L2)|(-510,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="66" Joints="N(61:R3)|(-525,180) N(62:L3)|(-510,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-455 145 40 40" DomainName="NI.MocCommon" Id="67" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="-400 145 40 40" DomainName="NI.MocCommon" Id="68" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="69" Joints="N(67:R0)|(-415,150) N(68:L0)|(-400,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="70" Joints="N(67:R1)|(-415,160) N(68:L1)|(-400,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="71" Joints="N(67:R2)|(-415,170) N(68:L2)|(-400,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="72" Joints="N(67:R3)|(-415,180) N(68:L3)|(-400,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="73" Joints="N(62:R0)|(-470,150) N(67:L0)|(-455,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="74" Joints="N(62:R1)|(-470,160) N(67:L1)|(-455,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="75" Joints="N(62:R2)|(-470,170) N(67:L2)|(-455,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="76" Joints="N(62:R3)|(-470,180) N(67:L3)|(-455,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-345 145 40 40" DomainName="NI.MocCommon" Id="77" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="-290 145 40 40" DomainName="NI.MocCommon" Id="78" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="79" Joints="N(77:R0)|(-305,150) N(78:L0)|(-290,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="80" Joints="N(77:R1)|(-305,160) N(78:L1)|(-290,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="81" Joints="N(77:R2)|(-305,170) N(78:L2)|(-290,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="82" Joints="N(77:R3)|(-305,180) N(78:L3)|(-290,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-235 145 40 40" DomainName="NI.MocCommon" Id="83" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="-180 145 40 40" DomainName="NI.MocCommon" Id="84" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="85" Joints="N(83:R0)|(-195,150) N(84:L0)|(-180,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="86" Joints="N(83:R1)|(-195,160) N(84:L1)|(-180,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="87" Joints="N(83:R2)|(-195,170) N(84:L2)|(-180,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="88" Joints="N(83:R3)|(-195,180) N(84:L3)|(-180,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="89" Joints="N(78:R0)|(-250,150) N(83:L0)|(-235,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="90" Joints="N(78:R1)|(-250,160) N(83:L1)|(-235,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="91" Joints="N(78:R2)|(-250,170) N(83:L2)|(-235,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="92" Joints="N(78:R3)|(-250,180) N(83:L3)|(-235,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="93" Joints="N(68:R0)|(-360,150) N(77:L0)|(-345,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="94" Joints="N(68:R1)|(-360,160) N(77:L1)|(-345,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="95" Joints="N(68:R2)|(-360,170) N(77:L2)|(-345,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="96" Joints="N(68:R3)|(-360,180) N(77:L3)|(-345,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="97" Joints="N(48:R0)|(-580,150) N(61:L0)|(-565,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="98" Joints="N(48:R1)|(-580,160) N(61:L1)|(-565,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="99" Joints="N(48:R2)|(-580,170) N(61:L2)|(-565,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="100" Joints="N(48:R3)|(-580,180) N(61:L3)|(-565,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="-505 125 30 15" Id="101" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>10</p.Text>
+			</Comment>
+			<MethodCall Bounds="-130 145 40 40" DomainName="NI.MocCommon" Id="102" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="-75 145 40 40" DomainName="NI.MocCommon" Id="103" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="104" Joints="N(102:R0)|(-90,150) N(103:L0)|(-75,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="105" Joints="N(102:R1)|(-90,160) N(103:L1)|(-75,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="106" Joints="N(102:R2)|(-90,170) N(103:L2)|(-75,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="107" Joints="N(102:R3)|(-90,180) N(103:L3)|(-75,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-20 145 40 40" DomainName="NI.MocCommon" Id="108" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="35 145 40 40" DomainName="NI.MocCommon" Id="109" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="110" Joints="N(108:R0)|(20,150) N(109:L0)|(35,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="111" Joints="N(108:R1)|(20,160) N(109:L1)|(35,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="112" Joints="N(108:R2)|(20,170) N(109:L2)|(35,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="113" Joints="N(108:R3)|(20,180) N(109:L3)|(35,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="114" Joints="N(103:R0)|(-35,150) N(108:L0)|(-20,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="115" Joints="N(103:R1)|(-35,160) N(108:L1)|(-20,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="116" Joints="N(103:R2)|(-35,170) N(108:L2)|(-20,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="117" Joints="N(103:R3)|(-35,180) N(108:L3)|(-20,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="118" Joints="N(84:R0)|(-140,150) N(102:L0)|(-130,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="119" Joints="N(84:R1)|(-140,160) N(102:L1)|(-130,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="120" Joints="N(84:R2)|(-140,170) N(102:L2)|(-130,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="121" Joints="N(84:R3)|(-140,180) N(102:L3)|(-130,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="35 125 30 15" Id="122" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>20</p.Text>
+			</Comment>
+			<MethodCall Bounds="90 145 40 40" DomainName="NI.MocCommon" Id="123" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="145 145 40 40" DomainName="NI.MocCommon" Id="124" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="125" Joints="N(123:R0)|(130,150) N(124:L0)|(145,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="126" Joints="N(123:R1)|(130,160) N(124:L1)|(145,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="127" Joints="N(123:R2)|(130,170) N(124:L2)|(145,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="128" Joints="N(123:R3)|(130,180) N(124:L3)|(145,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="200 145 40 40" DomainName="NI.MocCommon" Id="129" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="255 145 40 40" DomainName="NI.MocCommon" Id="130" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="131" Joints="N(129:R0)|(240,150) N(130:L0)|(255,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="132" Joints="N(129:R1)|(240,160) N(130:L1)|(255,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="133" Joints="N(129:R2)|(240,170) N(130:L2)|(255,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="134" Joints="N(129:R3)|(240,180) N(130:L3)|(255,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="135" Joints="N(124:R0)|(185,150) N(129:L0)|(200,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="136" Joints="N(124:R1)|(185,160) N(129:L1)|(200,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="137" Joints="N(124:R2)|(185,170) N(129:L2)|(200,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="138" Joints="N(124:R3)|(185,180) N(129:L3)|(200,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="310 145 40 40" DomainName="NI.MocCommon" Id="139" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="365 145 40 40" DomainName="NI.MocCommon" Id="140" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="141" Joints="N(139:R0)|(350,150) N(140:L0)|(365,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="142" Joints="N(139:R1)|(350,160) N(140:L1)|(365,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="143" Joints="N(139:R2)|(350,170) N(140:L2)|(365,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="144" Joints="N(139:R3)|(350,180) N(140:L3)|(365,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="420 145 40 40" DomainName="NI.MocCommon" Id="145" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="475 145 40 40" DomainName="NI.MocCommon" Id="146" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="147" Joints="N(145:R0)|(460,150) N(146:L0)|(475,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="148" Joints="N(145:R1)|(460,160) N(146:L1)|(475,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="149" Joints="N(145:R2)|(460,170) N(146:L2)|(475,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="150" Joints="N(145:R3)|(460,180) N(146:L3)|(475,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="151" Joints="N(140:R0)|(405,150) N(145:L0)|(420,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="152" Joints="N(140:R1)|(405,160) N(145:L1)|(420,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="153" Joints="N(140:R2)|(405,170) N(145:L2)|(420,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="154" Joints="N(140:R3)|(405,180) N(145:L3)|(420,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="155" Joints="N(130:R0)|(295,150) N(139:L0)|(310,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="156" Joints="N(130:R1)|(295,160) N(139:L1)|(310,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="157" Joints="N(130:R2)|(295,170) N(139:L2)|(310,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="158" Joints="N(130:R3)|(295,180) N(139:L3)|(310,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="530 145 40 40" DomainName="NI.MocCommon" Id="159" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="585 145 40 40" DomainName="NI.MocCommon" Id="160" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="161" Joints="N(159:R0)|(570,150) N(160:L0)|(585,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="162" Joints="N(159:R1)|(570,160) N(160:L1)|(585,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="163" Joints="N(159:R2)|(570,170) N(160:L2)|(585,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="164" Joints="N(159:R3)|(570,180) N(160:L3)|(585,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="640 145 40 40" DomainName="NI.MocCommon" Id="165" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="695 145 40 40" DomainName="NI.MocCommon" Id="166" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="167" Joints="N(165:R0)|(680,150) N(166:L0)|(695,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="168" Joints="N(165:R1)|(680,160) N(166:L1)|(695,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="169" Joints="N(165:R2)|(680,170) N(166:L2)|(695,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="170" Joints="N(165:R3)|(680,180) N(166:L3)|(695,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="171" Joints="N(160:R0)|(625,150) N(165:L0)|(640,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="172" Joints="N(160:R1)|(625,160) N(165:L1)|(640,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="173" Joints="N(160:R2)|(625,170) N(165:L2)|(640,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="174" Joints="N(160:R3)|(625,180) N(165:L3)|(640,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="750 145 40 40" DomainName="NI.MocCommon" Id="175" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="805 145 40 40" DomainName="NI.MocCommon" Id="176" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="177" Joints="N(175:R0)|(790,150) N(176:L0)|(805,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="178" Joints="N(175:R1)|(790,160) N(176:L1)|(805,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="179" Joints="N(175:R2)|(790,170) N(176:L2)|(805,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="180" Joints="N(175:R3)|(790,180) N(176:L3)|(805,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="860 145 40 40" DomainName="NI.MocCommon" Id="181" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="915 145 40 40" DomainName="NI.MocCommon" Id="182" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="183" Joints="N(181:R0)|(900,150) N(182:L0)|(915,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="184" Joints="N(181:R1)|(900,160) N(182:L1)|(915,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="185" Joints="N(181:R2)|(900,170) N(182:L2)|(915,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="186" Joints="N(181:R3)|(900,180) N(182:L3)|(915,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="187" Joints="N(176:R0)|(845,150) N(181:L0)|(860,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="188" Joints="N(176:R1)|(845,160) N(181:L1)|(860,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="189" Joints="N(176:R2)|(845,170) N(181:L2)|(860,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="190" Joints="N(176:R3)|(845,180) N(181:L3)|(860,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="191" Joints="N(166:R0)|(735,150) N(175:L0)|(750,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="192" Joints="N(166:R1)|(735,160) N(175:L1)|(750,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="193" Joints="N(166:R2)|(735,170) N(175:L2)|(750,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="194" Joints="N(166:R3)|(735,180) N(175:L3)|(750,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="195" Joints="N(146:R0)|(515,150) N(159:L0)|(530,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="196" Joints="N(146:R1)|(515,160) N(159:L1)|(530,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="197" Joints="N(146:R2)|(515,170) N(159:L2)|(530,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="198" Joints="N(146:R3)|(515,180) N(159:L3)|(530,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="590 125 30 15" Id="199" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>30</p.Text>
+			</Comment>
+			<MethodCall Bounds="965 145 40 40" DomainName="NI.MocCommon" Id="200" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="1020 145 40 40" DomainName="NI.MocCommon" Id="201" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="202" Joints="N(200:R0)|(1005,150) N(201:L0)|(1020,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="203" Joints="N(200:R1)|(1005,160) N(201:L1)|(1020,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="204" Joints="N(200:R2)|(1005,170) N(201:L2)|(1020,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="205" Joints="N(200:R3)|(1005,180) N(201:L3)|(1020,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="1075 145 40 40" DomainName="NI.MocCommon" Id="206" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="1130 145 40 40" DomainName="NI.MocCommon" Id="207" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="208" Joints="N(206:R0)|(1115,150) N(207:L0)|(1130,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="209" Joints="N(206:R1)|(1115,160) N(207:L1)|(1130,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="210" Joints="N(206:R2)|(1115,170) N(207:L2)|(1130,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="211" Joints="N(206:R3)|(1115,180) N(207:L3)|(1130,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="212" Joints="N(201:R0)|(1060,150) N(206:L0)|(1075,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="213" Joints="N(201:R1)|(1060,160) N(206:L1)|(1075,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="214" Joints="N(201:R2)|(1060,170) N(206:L2)|(1075,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="215" Joints="N(201:R3)|(1060,180) N(206:L3)|(1075,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="216" Joints="N(182:R0)|(955,150) N(200:L0)|(965,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="217" Joints="N(182:R1)|(955,160) N(200:L1)|(965,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="218" Joints="N(182:R2)|(955,170) N(200:L2)|(965,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="219" Joints="N(182:R3)|(955,180) N(200:L3)|(965,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="1130 125 30 15" Id="220" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>40</p.Text>
+			</Comment>
+			<Wire Id="221" Joints="N(109:R0)|(75,150) N(123:L0)|(90,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="222" Joints="N(109:R1)|(75,160) N(123:L1)|(90,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="223" Joints="N(109:R2)|(75,170) N(123:L2)|(90,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="224" Joints="N(109:R3)|(75,180) N(123:L3)|(90,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="1185 145 40 40" DomainName="NI.MocCommon" Id="225" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="1240 145 40 40" DomainName="NI.MocCommon" Id="226" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="227" Joints="N(225:R0)|(1225,150) N(226:L0)|(1240,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="228" Joints="N(225:R1)|(1225,160) N(226:L1)|(1240,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="229" Joints="N(225:R2)|(1225,170) N(226:L2)|(1240,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="230" Joints="N(225:R3)|(1225,180) N(226:L3)|(1240,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="1295 145 40 40" DomainName="NI.MocCommon" Id="231" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="1350 145 40 40" DomainName="NI.MocCommon" Id="232" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="233" Joints="N(231:R0)|(1335,150) N(232:L0)|(1350,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="234" Joints="N(231:R1)|(1335,160) N(232:L1)|(1350,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="235" Joints="N(231:R2)|(1335,170) N(232:L2)|(1350,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="236" Joints="N(231:R3)|(1335,180) N(232:L3)|(1350,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="1405 145 40 40" DomainName="NI.MocCommon" Id="237" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="1460 145 40 40" DomainName="NI.MocCommon" Id="238" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="239" Joints="N(237:R0)|(1445,150) N(238:L0)|(1460,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="240" Joints="N(237:R1)|(1445,160) N(238:L1)|(1460,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="241" Joints="N(237:R2)|(1445,170) N(238:L2)|(1460,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="242" Joints="N(237:R3)|(1445,180) N(238:L3)|(1460,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="243" Joints="N(232:R0)|(1390,150) N(237:L0)|(1405,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="244" Joints="N(232:R1)|(1390,160) N(237:L1)|(1405,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="245" Joints="N(232:R2)|(1390,170) N(237:L2)|(1405,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="246" Joints="N(232:R3)|(1390,180) N(237:L3)|(1405,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="247" Joints="N(226:R0)|(1280,150) N(231:L0)|(1295,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="248" Joints="N(226:R1)|(1280,160) N(231:L1)|(1295,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="249" Joints="N(226:R2)|(1280,170) N(231:L2)|(1295,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="250" Joints="N(226:R3)|(1280,180) N(231:L3)|(1295,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="1510 145 40 40" DomainName="NI.MocCommon" Id="251" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="1565 145 40 40" DomainName="NI.MocCommon" Id="252" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="253" Joints="N(251:R0)|(1550,150) N(252:L0)|(1565,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="254" Joints="N(251:R1)|(1550,160) N(252:L1)|(1565,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="255" Joints="N(251:R2)|(1550,170) N(252:L2)|(1565,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="256" Joints="N(251:R3)|(1550,180) N(252:L3)|(1565,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="1620 145 40 40" DomainName="NI.MocCommon" Id="257" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="1675 145 40 40" DomainName="NI.MocCommon" Id="258" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="259" Joints="N(257:R0)|(1660,150) N(258:L0)|(1675,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="260" Joints="N(257:R1)|(1660,160) N(258:L1)|(1675,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="261" Joints="N(257:R2)|(1660,170) N(258:L2)|(1675,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="262" Joints="N(257:R3)|(1660,180) N(258:L3)|(1675,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="263" Joints="N(252:R0)|(1605,150) N(257:L0)|(1620,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="264" Joints="N(252:R1)|(1605,160) N(257:L1)|(1620,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="265" Joints="N(252:R2)|(1605,170) N(257:L2)|(1620,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="266" Joints="N(252:R3)|(1605,180) N(257:L3)|(1620,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="267" Joints="N(238:R0)|(1500,150) N(251:L0)|(1510,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="268" Joints="N(238:R1)|(1500,160) N(251:L1)|(1510,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="269" Joints="N(238:R2)|(1500,170) N(251:L2)|(1510,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="270" Joints="N(238:R3)|(1500,180) N(251:L3)|(1510,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="1675 125 30 15" Id="271" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>50</p.Text>
+			</Comment>
+			<Wire Id="272" Joints="N(207:R0)|(1170,150) N(225:L0)|(1185,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="273" Joints="N(207:R1)|(1170,160) N(225:L1)|(1185,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="274" Joints="N(207:R2)|(1170,170) N(225:L2)|(1185,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="275" Joints="N(207:R3)|(1170,180) N(225:L3)|(1185,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="1725 145 40 40" DomainName="NI.MocCommon" Id="276" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="1780 145 40 40" DomainName="NI.MocCommon" Id="277" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="278" Joints="N(276:R0)|(1765,150) N(277:L0)|(1780,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="279" Joints="N(276:R1)|(1765,160) N(277:L1)|(1780,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="280" Joints="N(276:R2)|(1765,170) N(277:L2)|(1780,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="281" Joints="N(276:R3)|(1765,180) N(277:L3)|(1780,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="1835 145 40 40" DomainName="NI.MocCommon" Id="282" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="1890 145 40 40" DomainName="NI.MocCommon" Id="283" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="284" Joints="N(282:R0)|(1875,150) N(283:L0)|(1890,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="285" Joints="N(282:R1)|(1875,160) N(283:L1)|(1890,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="286" Joints="N(282:R2)|(1875,170) N(283:L2)|(1890,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="287" Joints="N(282:R3)|(1875,180) N(283:L3)|(1890,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="1945 145 40 40" DomainName="NI.MocCommon" Id="288" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="2000 145 40 40" DomainName="NI.MocCommon" Id="289" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="290" Joints="N(288:R0)|(1985,150) N(289:L0)|(2000,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="291" Joints="N(288:R1)|(1985,160) N(289:L1)|(2000,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="292" Joints="N(288:R2)|(1985,170) N(289:L2)|(2000,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="293" Joints="N(288:R3)|(1985,180) N(289:L3)|(2000,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="294" Joints="N(283:R0)|(1930,150) N(288:L0)|(1945,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="295" Joints="N(283:R1)|(1930,160) N(288:L1)|(1945,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="296" Joints="N(283:R2)|(1930,170) N(288:L2)|(1945,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="297" Joints="N(283:R3)|(1930,180) N(288:L3)|(1945,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="298" Joints="N(277:R0)|(1820,150) N(282:L0)|(1835,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="299" Joints="N(277:R1)|(1820,160) N(282:L1)|(1835,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="300" Joints="N(277:R2)|(1820,170) N(282:L2)|(1835,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="301" Joints="N(277:R3)|(1820,180) N(282:L3)|(1835,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="2050 145 40 40" DomainName="NI.MocCommon" Id="302" ResolveFailedHint="&quot;D:\\MA\\802.11 CSI Sensing - STA Transmitter\\802.11 v2.2\\FPGA\\TX\\Read Memory.gcdl&quot;" Target="Read\ Memory\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CD DRAM" />
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="L2" Desc="address" />
+						<Parameter Id="L3" Desc="ready for output" />
+						<Parameter Id="R0" Desc="reference out" />
+						<Parameter Id="R1" Desc="output array" />
+						<Parameter Id="R2" Desc="address_2" />
+						<Parameter Id="R3" Desc="output valid" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@7cc360f22d3841e4abf8950b2c7aea80" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16[57]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="303" Joints="N(289:R0)|(2040,150) N(302:L0)|(2050,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="304" Joints="N(289:R1)|(2040,160) N(302:L1)|(2050,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="305" Joints="N(289:R2)|(2040,170) N(302:L2)|(2050,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="306" Joints="N(289:R3)|(2040,180) N(302:L3)|(2050,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="307" Joints="N(258:R0)|(1715,150) N(276:L0)|(1725,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="308" Joints="N(258:R1)|(1715,160) N(276:L1)|(1725,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="309" Joints="N(258:R2)|(1715,170) N(276:L2)|(1725,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="310" Joints="N(258:R3)|(1715,180) N(276:L3)|(1725,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="2055 125 30 15" Id="311" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>57</p.Text>
+			</Comment>
+			<PropertyNode Bounds="2160 160 163 50" HasErrorTerminals="False" Id="312" InstanceDataType="@16db1f32267f4c8c966ac08fd570dcc1" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/MocCommon">
+				<PropertyItemTerminal Action="Write" DataType="UInt16[57]" Hotspot="0 15" Id="c0t0v" Path="Channel Disturbance" PathElementMemberKinds="Field" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="Boolean" Hotspot="0 30" Id="c1t0v" Path="valid" PathElementMemberKinds="Field" Usage="Required" />
+			</PropertyNode>
+			<Wire Id="313" Joints="N(302:R1)|(2090,160) h(60) v(15) N(312:c0t0v)|(2160,175)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="314" Joints="N(302:R3)|(2090,180) h(10) v(10) N(312:c1t0v)|(2160,190)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="315" Joints="N(312:instance out)|(2323,165) h(5) v(-5) N(19:Value)|(2378,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="16" Bounds="-1353 130 53 14" Id="316" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>CD DRAM</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="19" Bounds="2420 155 58 14" Id="318" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>CD cluster</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="21" Bounds="-1150 165 0 0" Id="319" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>address</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="-1435 320 40 15" DataItem="331" Id="341" Label="342" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@16db1f32267f4c8c966ac08fd570dcc1" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="341" Bounds="-1491 320 51 14" Id="342" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>cluster in</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="-1400 215 40 15" DataItem="343" Id="345" Label="347" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="345" Bounds="-1496 215 91 14" Id="347" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>ready for output</p.Text>
+			</NodeLabel>
+		</BlockDiagram>
+		<NativeFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
+			<PanelExecutionWindow Id="348" />
+		</NativeFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="0" DataType="@7cc360f22d3841e4abf8950b2c7aea80" Id="320" Name="CD DRAM" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="0" DataType="@16db1f32267f4c8c966ac08fd570dcc1" Id="321" Name="CD cluster" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>null</Field1>
+					<Field2>False</Field2>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="AnBa\ Channel\ Disturbance\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" DataType="@16db1f32267f4c8c966ac08fd570dcc1" Id="331" Name="cluster in" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>null</Field1>
+					<Field2>False</Field2>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="AnBa\ Channel\ Disturbance\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" DataType="Boolean" Id="343" Name="ready for output" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>True</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="7cc360f22d3841e4abf8950b2c7aea80">
+			<Attributed AttributedType="@09a71c5f05084f1b8580f5c63d23e588">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Dram" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="16db1f32267f4c8c966ac08fd570dcc1">
+			<Typedef TypedefName="AnBa Channel Disturbance.gtype" UnderlyingType="@e3e0c133e1a445a5a8236c0bf33932b6" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="09a71c5f05084f1b8580f5c63d23e588">
+			<Composite Id="1" Name="DramDataType" ReferenceClass="" GenericTypeDefinition="@b1c506dd5ef54a7381e3e27c15de76a2">
+				<ClosedGenericParameters>
+					<TypeRef>UInt16</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="e3e0c133e1a445a5a8236c0bf33932b6">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Channel Disturbance" DataType="UInt16[57]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="valid" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b1c506dd5ef54a7381e3e27c15de76a2">
+			<Attributed AttributedType="@0c2454631009484a807985893234902b">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Dram" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="0c2454631009484a807985893234902b">
+			<Composite Id="1" Name="DramDataType" ReferenceClass="" GenericTypeDefinition="@b1c506dd5ef54a7381e3e27c15de76a2">
+				<GenericParameters>
+					<Generic GenericName="Element" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="Read" Name="element bit-width" DataType="Int32" />
+					<Function Id="2" IsStatic="False" IsConstructor="False" Name="RequestData" ReturnType="Void" DeclaringType="@b1c506dd5ef54a7381e3e27c15de76a2" GenericTypeDefinition="Void" />
+					<Function Id="3" IsStatic="False" IsConstructor="False" Name="RetrieveData" ReturnType="Void" DeclaringType="@b1c506dd5ef54a7381e3e27c15de76a2" GenericTypeDefinition="Void" />
+					<Function Id="4" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void" DeclaringType="@b1c506dd5ef54a7381e3e27c15de76a2" GenericTypeDefinition="Void" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="Read\ Memory\.gcdl">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]36" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Read Memory" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="11F812D78BF2CC2CE3472D9058F87F7E" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@f0bcc611407b4c659c242e6c3159813c" Friends="" Id="1" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AnBa Channel Disturbance" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@f0bcc611407b4c659c242e6c3159813c" Id="15" Name="Cluster">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>null</Field1>
+					<Field2>False</Field2>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="10" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="11" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,DefaultTarget,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="12" ModelDefinitionType="DefaultTarget" Name="AnBa\ Channel\ Disturbance\.gtype" NameTracksFileName="True">
+			<DefaultTarget />
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.PanelCommon.SourceModel.ControlDefinition,EmbeddedReference" Id="13" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="14" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@f0bcc611407b4c659c242e6c3159813c" Height="[float]819" Id="17" Label="[UIModel]18" Left="[float]245" Top="[float]124" Value="{DataItemBinding Id=15}" Width="[float]199" xmlns="http://www.ni.com/PanelCommon">
+						<ArrayViewer ArrayElement="[UIModel]20" BaseName="[string]Numeric Array Output" Columns="[int]1" Dimensions="[int]1" FixedSize="[int]57" Height="[float]1380" Id="19" IsFixedSize="[bool]True" Label="[UIModel]22" Left="[float]10" Orientation="[SMOrientation]Vertical" Rows="[int]57" Top="[float]27" Value="{ClusterBinding FieldName=Phase\ Rotations}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]133">
+							<p.DefaultElementValue>0</p.DefaultElementValue>
+							<NumericText Height="[float]22" Id="20" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ushort]1" Label="[UIModel]21" Left="[float]53" MinHeight="[float]22" Top="[float]7" Value="[ushort]0" ValueType="[Type]UInt16" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<Label Id="21" IsVisualChild="[bool]False" LabelOwner="[UIModel]20" Left="[float]53" Text="[string]Numeric" Top="[float]-13" xmlns="http://www.ni.com/PanelCommon" />
+							</NumericText>
+						</ArrayViewer>
+						<Label Height="[float]16" Id="22" LabelOwner="[UIModel]19" Left="[float]10" Text="[string]Phase Rotations" Top="[float]4" Width="[float]85" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]30" Id="25" IsReadOnly="[bool]False" Label="[UIModel]26" Left="[float]155" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Round" Top="[float]27" TrueContent="[string]On" Value="{ClusterBinding FieldName=valid}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="26" LabelOwner="[UIModel]25" Left="[float]155" Text="[string]valid" Top="[float]4" Width="[float]25" />
+					</Cluster>
+					<Label Height="[float]16" Id="18" LabelOwner="[UIModel]17" Left="[float]245" Text="[string]Phase Rotations Cluster" Top="[float]101" Width="[float]125" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="f0bcc611407b4c659c242e6c3159813c">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Phase Rotations">
+						<DataType>
+							<SizedArray LowerBound="57" UpperBound="57" DereferenceType="UInt16" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="valid" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

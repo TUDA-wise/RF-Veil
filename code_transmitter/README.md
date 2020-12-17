@@ -1,0 +1,23 @@
+# RF-Veil Transmitter Code
+
+This folder contains the sub-VIs we used to implement the **RF-Veil transmitter**. We integrated the code into the existing NI 802.11 AFW code [1].
+
+In order to implement the RF-Veil transmitter, we mainly used already existing VIs of the 802.11 AFW. As we are unable to share this code, we can only share insights we gained during the implementation. 
+
+ The *Fingerprint Modification* module takes as input a vector of artificial phase errors (57 elements), i.e., one value for each subcarrier. It then creates the modified channel vector, writes the contents into the body of an ICP message, and then finally writes the ICP message to the FIFO H2T Phase Errors. We designed this FIFO to hold up to 4101 8-bit unsigned integers, effectively carrying up to 33 ICP messages. We now describe the implementation in more detail. The initial channel vector contains 57 complex fixed-point values of z = 1 + 0j, which represent a clean channel. On the other side, the artificial phase error vector holds the phase rotation for each of the 57 subcarriers. Note that we use 57 values also to support 802.11 ac with 56 subcarriers (excluding null subcarrier). The sub-VI *Prepare Channel Vector* iterates over the 57 values of the initial channel vector, and first separates the complex value z = r ∗ ejθ into its polar components r and θ. Since the radial part rk does not need to be modified, it is directly converted to an 8-bit integer and then stored into the 8-bit array. At the same time, the phase error εk for subcarrier k is added to the angular coordinate θk. The next module then converts the resulting double-value θ∗k = θk + εk into an 8-bit integer, before inserting this integer into the array right behind its converted radial part. The finished loop outputs the array with 114 values in the form arr8bit unsigned int = [r0, θ∗0, . . . , rk, θ∗k]. The implementation then passes this array to the next module, which takes care of generating the headers for the ICP message around the array. The last module finally writes the message to the FIFO H2T Phase Errors.
+
+The PHY implementation first reads all available data from the PHY SAP, which also includes the Phase Error LUT. The TX Bit Processing generates the signal fields and serializes, scrambles, encodes, punctures, and interleaves the data stream before passing it to the TX IQ Processing. The main task of this module is then to add training fields (STF, LTF) and convert the bits to IQ samples. The first module generates the packet structure, i.e., timing, parameters, and field mapping, that stays constant during an OFDM symbol. This metadata then serves as input for the next module, which is responsible for accordingly generating the LTF, pilot, or data IQ symbol. Parallel to that, based on the frequency offset indicator from the packet structure, the module Get Phase Error for SC loads the according phase error from the array and converts them into a fixed point complex number. The program flow merges again in the next module, which takes care of multiplying the two complex numbers, i.e., the complex phase rotation path with the complex IQ symbol from the upper and lower data paths, respectively. The following downstream modules duplicate and rotate the channel and further apply the iFFT pre-scaling to the symbols. Finally, the output of the 256-point iFFT is written into the TX to RF FIFO for transmission.
+
+##Implementation Details
+
+*Please read the implementation details of the RF-Veil receiver first*. 
+
+Due to NI AFW licensing, we are only able to share the code we wrote on our own. Hence, this repository only contains code-snippets and does not represent a fully-functional 802.11 station. In order to use this PoC, the VIs have to be built into the 802.11 AFW.
+
+Please refer to the RF-Veil recevier for how to implement the real-time fingerprint extraction. 
+
+For the RF-Veil transmitter PoC, we have to add a new FIFO (see *802.11 AFW Resources.png*), push the values from the host through this new FIFO onto the FPGA, read it in the lower MAC-layer (see *802.11 FPGA STA - lower mac.png*) and write it into memory (see *802.11 Create Ressources.png*). The FPGA loop then accesses this memory (see *802.11 PHY-SAP Read PHY.png*), extracts the values and adds the introduced phase rotation to each subcarriers (see *802.11 TX IQ Processing*). See the folder FPGA and screenshots for futher information on the implementation. 
+
+Note that the type *802.11 PHY-SAP Ressources.gtype* has to be extended for an additional element *Phase Rotations* (see screenshot).
+
+[1] https://www.ni.com/de-de/shop/software/products/labview-communications-802-11-application-framework.html
